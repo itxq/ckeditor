@@ -6,13 +6,13 @@
 CKEDITOR.editorConfig = function (config) {
     config.allowedContent = true;
     // 加载的插件列表
-    config.extraPlugins = ['autosave', 'image2', 'tableresize', 'html5video'];
+    config.extraPlugins = ['autosave', 'image2', 'tableresize', 'html5video', 'audio', 'spacingsliders', 'pbckcode'];
     // 语言设置
     config.language = 'zh-cn';
     // 皮肤设置
     config.skin = 'moono-lisa';
     // 颜色设置
-    config.uiColor = '#F1F1F1';
+    config.uiColor = '#f0f8ff';
     // Z-Index 设置
     config.baseFloatZIndex = 9999999;
     // 允许折叠
@@ -23,6 +23,24 @@ CKEDITOR.editorConfig = function (config) {
     config.height = 280;
     // jquery CDN
     config.jq_cdn = '//upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js';
+    // 工具栏分组设置
+    config.toolbarGroups = [
+        {name: 'document', groups: ['mode', 'pbckcode', 'document', 'doctools']},
+        {name: 'clipboard', groups: ['clipboard', 'undo']},
+        {name: 'styles', groups: ['styles', 'spacingsliders']},
+        {name: 'basicstyles', groups: ['basicstyles', 'cleanup']},
+        {name: 'editing', groups: ['find', 'selection', 'spellchecker', 'editing']},
+        {name: 'forms', groups: ['forms']},
+        {name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi', 'paragraph']},
+        {name: 'links', groups: ['links']},
+        {name: 'insert', groups: ['audio', 'insert']},
+        {name: 'colors', groups: ['colors']},
+        {name: 'tools', groups: ['tools']},
+        {name: 'others', groups: ['others']},
+        {name: 'about', groups: ['about']}
+    ];
+    config.removeButtons = 'Language';
+    config.removePlugins = 'image';
     // 字体设置
     config.font_names = '宋体/SimSun;新宋体/NSimSun;仿宋/FangSong;楷体/KaiTi;仿宋_GB2312/FangSong_GB2312;' +
         '楷体_GB2312/KaiTi_GB2312;黑体/SimHei;华文细黑/STXihei;华文楷体/STKaiti;华文宋体/STSong;华文中宋/STZhongsong;' +
@@ -33,39 +51,4 @@ CKEDITOR.editorConfig = function (config) {
     config.disableNativeTableHandles = false;
     // 是否禁用 图片和表格 的改变大小的功能
     config.disableObjectResizing = false;
-    // 代码编辑器设置
-    config.pbckcode = {
-        // An optional class to your pre tag.
-        cls: '',
-        // The syntax highlighter you will use in the output view
-        highlighter: 'SYNTAX_HIGHLIGHTER',
-        
-        // An array of the available modes for you plugin.
-        // The key corresponds to the string shown in the select tag.
-        // The value correspond to the loaded file for ACE Editor.
-        // The theme of the ACE Editor of the plugin.
-        theme: 'tomorrow_night',
-        
-        // Tab indentation (in spaces)
-        tab_size: '4',
-        keystrokes: [
-            [CKEDITOR.ALT + 121, 'toolbarFocus'], //获取焦点
-            [CKEDITOR.ALT + 122, 'elementsPathFocus'], //元素焦点
-            [CKEDITOR.SHIFT + 121, 'contextMenu'], //文本菜单
-            [CKEDITOR.CTRL + 90, 'undo'], //撤销
-            [CKEDITOR.CTRL + 89, 'redo'], //重做
-            [CKEDITOR.CTRL + CKEDITOR.SHIFT + 90, 'redo'], //
-            [CKEDITOR.CTRL + 76, 'link'], //链接
-            [CKEDITOR.CTRL + 66, 'bold'], //粗体
-            [CKEDITOR.CTRL + 73, 'italic'], //斜体
-            [CKEDITOR.CTRL + 85, 'underline'], //下划线
-            [CKEDITOR.ALT + 109, 'toolbarCollapse']
-        ],
-        //设置快捷键 可能与浏览器快捷键冲突 plugins/keystrokes/plugin.js.
-        blockedKeystrokes: [
-            CKEDITOR.CTRL + 66,
-            CKEDITOR.CTRL + 73,
-            CKEDITOR.CTRL + 85
-        ]
-    };
 };
