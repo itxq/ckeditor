@@ -239,12 +239,12 @@
                     moment(autoSavedContentDate).locale(editorInstance.config.language)
                     .format(editorInstance.lang.autosave.dateFormat));
                 
-                if (confirm(confirmMessage)) {
-                    // Open DIFF Dialog
-                    editorInstance.openDialog('autosaveDialog');
-                } else {
-                    RemoveStorage(autoSaveKey, editorInstance);
-                }
+                // if (confirm(confirmMessage)) {
+                // Open DIFF Dialog
+                editorInstance.openDialog('autosaveDialog');
+                // } else {
+                //  RemoveStorage(autoSaveKey, editorInstance);
+                // }
             }
         }
     }
