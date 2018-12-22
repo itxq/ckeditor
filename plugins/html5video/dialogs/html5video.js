@@ -32,7 +32,7 @@ CKEDITOR.dialog.add( 'html5video', function( editor ) {
                         id: 'browse',
                         // v-align with the 'txtUrl' field.
                         // TODO: We need something better than a fixed size here.
-                        style: 'display:inline-block;margin-top:14px;',
+                        style: 'display:inline-block;margin-top:21px;',
                         align: 'center',
                         label: editor.lang.common.browseServer,
                         hidden: true,

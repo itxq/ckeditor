@@ -1,6 +1,6 @@
 CKEDITOR.plugins.add( 'html5video', {
     requires: 'widget',
-    lang: 'de,en,eu,es,ru,uk,fr',
+    lang: 'de,en,eu,es,ru,uk,fr,zh-cn',
     icons: 'html5video',
     init: function( editor ) {
         editor.widgets.add( 'html5video', {
@@ -57,7 +57,7 @@ CKEDITOR.plugins.add( 'html5video', {
                     }
 										
                     if ( responsive ) {
-                        this.setData( 'responsive', responsive );	
+                        this.setData( 'responsive', responsive );
                     }
                 }
             },
@@ -84,7 +84,7 @@ CKEDITOR.plugins.add( 'html5video', {
                     } else {
                             this.element.getChild( 0 ).removeStyle( 'max-width' );
                             this.element.getChild( 0 ).removeStyle( 'height' );
-                    }								
+                    }
                 }
 
                 this.element.removeStyle( 'float' );
