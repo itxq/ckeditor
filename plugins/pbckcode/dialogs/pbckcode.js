@@ -207,7 +207,7 @@ CKEDITOR.dialog.add('pbckcodeDialog', function (editor) {
     return {
         // Basic properties of the dialog window: title, minimum size.
         title: editor.lang.pbckcode.title,
-        minWidth:480,
+        minWidth: 480,
         minHeight: 400,
         // Dialog window contents definition.
         contents: [
@@ -232,7 +232,7 @@ CKEDITOR.dialog.add('pbckcodeDialog', function (editor) {
             aceSession.setUseSoftTabs(true);
             
             // load ace extensions
-            whitespace = ace.require('ace/ext/whitespace');
+            // whitespace = ace.require('ace/ext/whitespace');
         },
         onShow: function () {
             // get the selection
