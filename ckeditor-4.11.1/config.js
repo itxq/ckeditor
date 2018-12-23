@@ -10,9 +10,9 @@ CKEDITOR.editorConfig = function (config) {
     // 语言设置
     config.language = 'zh-cn';
     // 皮肤设置
-    config.skin = 'moono-lisa';
+    config.skin = 'bootstrapck';
     // 颜色设置
-    config.uiColor = '#f0f8ff';
+    config.uiColor = '#FFFFFF';
     // Z-Index 设置
     config.baseFloatZIndex = 9999999;
     // 允许折叠
@@ -30,16 +30,18 @@ CKEDITOR.editorConfig = function (config) {
         {name: 'styles', groups: ['styles', 'spacingsliders']},
         {name: 'basicstyles', groups: ['basicstyles', 'cleanup']},
         {name: 'editing', groups: ['find', 'selection', 'spellchecker', 'editing']},
-        {name: 'forms', groups: ['forms']},
         {name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi', 'paragraph']},
         {name: 'links', groups: ['links']},
         {name: 'insert', groups: ['audio', 'insert']},
         {name: 'colors', groups: ['colors']},
-        {name: 'tools', groups: ['tools']},
         {name: 'others', groups: ['others']},
+        {name: 'forms', groups: ['forms']},
+        {name: 'tools', groups: ['tools']},
         {name: 'about', groups: ['about']}
     ];
-    config.removeButtons = 'Language';
+    // 禁用的按钮
+    config.removeButtons = 'Language,Save,About';
+    // 禁用的插件
     config.removePlugins = 'image';
     // 字体设置
     config.font_names = '宋体/SimSun;新宋体/NSimSun;仿宋/FangSong;楷体/KaiTi;仿宋_GB2312/FangSong_GB2312;' +
