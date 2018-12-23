@@ -24,8 +24,6 @@
 /* ace reset needed due to ckeditor style */
 .cke_pbckcode_ace.ace_editor * {font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Droid Sans Mono', 'Consolas', monospace;font-size: 12px;}
 
-.cke_pbckcode_ace.ace_editor .ace_line {height: 22px !important;line-height: 22px !important;font-size: 18px !important;}
-
 .cke_pbckcode_ace .ace_invisible {opacity: 0;visibility: hidden;}
 
 /*good font color on dark theme*/

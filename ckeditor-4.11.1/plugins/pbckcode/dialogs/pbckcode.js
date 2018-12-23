@@ -181,7 +181,7 @@ CKEDITOR.dialog.add('pbckcodeDialog', function (editor) {
                 html: '<div></div>',
                 id: 'code-textarea',
                 className: 'cke_pbckcode_ace',
-                style: 'position: absolute; top: 180px; left: 10px; right: 10px; bottom: 50px;',
+                style: 'position: absolute; top: 190px; left: 10px; right: 10px; bottom: 50px;',
                 setup: function (element) {
                     // get the value of the editor
                     var code = element.getHtml();
