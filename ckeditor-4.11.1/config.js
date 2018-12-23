@@ -12,7 +12,7 @@ CKEDITOR.editorConfig = function (config) {
     // 皮肤设置
     config.skin = 'bootstrapck';
     // 颜色设置
-    config.uiColor = '#FFFFFF';
+    config.uiColor = '#f1f1f1';
     // Z-Index 设置
     config.baseFloatZIndex = 9999999;
     // 允许折叠
