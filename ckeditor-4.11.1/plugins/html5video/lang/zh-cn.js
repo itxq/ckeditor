@@ -4,7 +4,7 @@ CKEDITOR.plugins.setLang('html5video', 'zh-cn', {
     infoLabel: '基础设置',
     allowed: '允许插入的视频格式: MP4, WebM, Ogv',
     urlMissing: '请选择视频URL地址',
-    videoProperties: 'Video properties',
+    videoProperties: '视频编辑',
     upload: '上传',
     btnUpload: '上传',
     advanced: '高级设置',
